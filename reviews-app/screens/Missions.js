@@ -9,7 +9,7 @@ export default function Missions({navigation}){
   }
 
   return(
-    <View>
+    <View style={globalStyles.bodyContainer}>
       <Text style={globalStyles.text}></Text>
       <Button 
         onPress={()=> pressHandler('ReviewDetails')}
