@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {View, Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native'
+import {View, Text, StyleSheet, FlatList, TouchableOpacity, ImageBackground} from 'react-native'
 import globalStyles from '../styles/globalStyles'
 import Card from '../shared/card'
 
@@ -12,7 +12,7 @@ export default function Home({navigation}){
   ])
 
   return(
-    <View style={globalStyles.bodyContainer}>
+    <ImageBackground source={require('../assets/bg.png')}  style={globalStyles.bodyContainer}>
       <FlatList
       data={reviews}
       renderItem={({item})=> (
@@ -20,7 +20,7 @@ export default function Home({navigation}){
           <Card><Text>{item.title}</Text></Card>
         </TouchableOpacity>
       )} />
-    </View>
+    </ImageBackground>
   )
 }
 

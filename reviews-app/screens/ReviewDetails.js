@@ -12,14 +12,13 @@ export default function ReviewDetails({navigation}){
       <Card>
         <Text>Title: {navigation.getParam('title')}</Text>
         <Text>Body: {navigation.getParam('body')}</Text>
-        <Text>{rating}</Text>
         <View style={styles.rating}>
           <Text>Movie Rating: </Text>
           <View style={styles.stars}>
           {(()=>{
             let star = []
             for(let i=1; i<=rating; i++){
-              star.push(<FontAwesome name="star" size={24} color="gold" />)
+              star.push(<FontAwesome name="star" size={20} color="gold" />)
             }
             return star
           })()}
@@ -33,5 +32,11 @@ export default function ReviewDetails({navigation}){
 const styles = StyleSheet.create({
   stars:{
     flexDirection: 'row'
+  },
+  rating: {
+    marginTop: 5,
+    borderTopWidth: 1,
+    borderTopColor: 'black',
+    flexDirection:'row'
   }
 })

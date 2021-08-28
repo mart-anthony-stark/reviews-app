@@ -7,7 +7,8 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
   },
   bodyContainer:{
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    height: "100%"
   },
   text:{
     fontSize: 10
