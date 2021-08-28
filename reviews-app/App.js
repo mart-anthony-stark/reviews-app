@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import globalStyles from './styles/globalStyles'
 import Constants from 'expo-constants';
-import Navigator from './routes/homeStack'
+import Navigator from './routes/drawer'
 
 
 export default function App() {
