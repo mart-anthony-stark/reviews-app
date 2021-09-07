@@ -50,7 +50,7 @@ export default function Home({ navigation }) {
             color="black"
             onPress={() => setOpenModal(false)}
           />
-          <ReviewForm addReview={addReview} />
+          <ReviewForm addReview={addReview} setOpenModal={setOpenModal} />
         </View>
       </Modal>
 
